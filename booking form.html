@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>VISIT_TCHAD</title>
+        <link rel="stylesheet" href="Style.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body>
+<div class="book">
+  <h1>Book Your Trip to Chad</h1>
+  <p>Fill out the form below to reserve your travel package:</p>
+</div>
+
+
+  <form name="bookingForm" class="booking-form" onsubmit="return validateForm()">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+    <label for= "passport">Passport</label>
+    <input type="text" id="passport"name="passport" placeholder="Enter your passport's Number">
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" placeholder="+235 123 456 789">
+
+    <label for="package">Select Package:</label>
+    <select id="package" name="package">
+      <option value="">Choose a package</option>
+      <option value="adventure">Adventure Tour</option>
+      <option value="wildlife">Wildlife Safari</option>
+      <option value="cultural">Cultural Tour</option>
+    </select>
+
+    <label for="date">Travel Date:</label>
+    <input type="date" id="date" name="date">
+
+    <button type="submit" class="btn">Book Now</button>
+  
+  </form>
+
+  <script src="java.js"></script>
+</body>
+</html>
